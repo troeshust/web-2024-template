@@ -12,7 +12,7 @@ function App() {
       <GuideSection>
         <strong>Single Target Priority:</strong>
         <ol>
-          {SPELLS.map((spell, index) => (
+          {SPELLS.map((spell) => (
             <li key={spell.id}>
               <SpellLink spell={spell} />
               {spell.condition && ` ${spell.condition}`}
